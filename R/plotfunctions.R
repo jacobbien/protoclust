@@ -16,6 +16,12 @@ innernodepositions <- function(hc) {
   return(pos)
 }
 
+#' Plot Dendrogram
+#' 
+#' Calls \code{\link{plotwithprototypes}}, which allows one to add prototype
+#' labels to the dendrogram.
+#' 
+#' @export
 plot.protoclust <- function(x, ...) {
   plotwithprototypes(x, ...)
 }
@@ -96,9 +102,10 @@ plotwithprototypes <- function(hc, imerge=-seq(n), labels=NULL, bgcol="white", f
   if (!inherits(hc, "protoclust"))
     stop("Must input object of class protoclust.")
   additional_arguments <- list(...)
-  if (!is.null(additional_arguments[["imerge"]])) {
-    imerge <- additional_arguments[["imerge"]]
-    additional_arguments[["imerge"]] <- NULL
+  for (arg in c("imerge", "col", "font"))
+  if (!is.null(additional_arguments[[arg]])) {
+    assign(arg, additional_arguments[[arg]])
+    additional_arguments[arg] <- NULL
   }
   n <- length(hc$order)
   stopifnot(imerge < n & imerge >= -n)
