@@ -1,7 +1,7 @@
 Package: protoclust
 Type: Package
 Title: Hierarchical Clustering with Prototypes
-Version: 1.6
+Version: 1.6.1
 Date: 2017-03-18
 Author: Jacob Bien and Rob Tibshirani
 Maintainer: Jacob Bien <jbien@cornell.edu>

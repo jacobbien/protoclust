@@ -95,6 +95,11 @@ plotwithprototypes <- function(hc, imerge=-seq(n), labels=NULL, bgcol="white", f
   # Uses plot.hclust  imerge controls which leaves and interior nodes to label.
   if (!inherits(hc, "protoclust"))
     stop("Must input object of class protoclust.")
+  additional_arguments <- list(...)
+  if (!is.null(additional_arguments[["imerge"]])) {
+    imerge <- additional_arguments[["imerge"]]
+    additional_arguments[["imerge"]] <- NULL
+  }
   n <- length(hc$order)
   stopifnot(imerge < n & imerge >= -n)
   # set labels:
@@ -109,9 +114,11 @@ plotwithprototypes <- function(hc, imerge=-seq(n), labels=NULL, bgcol="white", f
   leaf <- -imerge[imerge < 0]
   leaflabels <- rep("", n)
   leaflabels[leaf] <- labels[leaf] # only draw leaves specified by imerge
-  hhc=hc
-  class(hhc)="hclust"
-  plot(hhc, labels=leaflabels, ...)
+  hhc <- hc
+  class(hhc) <- "hclust"
+  plot_args <- list(hhc, labels = leaflabels)
+  plot_args <- c(plot_args, additional_arguments)
+  do.call(plot, plot_args)
   # draw interior node labels:
   imerge <- imerge[imerge > 0]
   if (length(imerge) != 0) {
