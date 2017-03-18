@@ -1,0 +1,16 @@
+Package: protoclust
+Type: Package
+Title: Hierarchical Clustering with Prototypes
+Version: 1.6
+Date: 2017-03-18
+Author: Jacob Bien and Rob Tibshirani
+Maintainer: Jacob Bien <jbien@cornell.edu>
+Description: Performs minimax linkage hierarchical clustering.  Every cluster
+    has an associated prototype element that represents that cluster as
+    described in Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
+    with Prototypes via Minimax Linkage," accepted for publication in The
+    Journal of the American Statistical Association, DOI:
+    10.1198/jasa.2011.tm10183.
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 5.0.1
