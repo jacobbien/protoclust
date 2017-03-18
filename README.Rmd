@@ -44,7 +44,7 @@ plot(x, type = "n", xlab = "", ylab = "")
 points(x, pch = 20, col = "lightblue")
 ```
 
-We compute an n-by-n matrix of dissimilarities `d`.
+After computing an n-by-n matrix of dissimilarities `d`, we can apply prototype clustering.
 
 ```{r dendrogram}
 # perform minimax linkage clustering:
@@ -59,7 +59,7 @@ plot(hc, imerge = cut$imerge, col=2)
 abline(h = h, lty = 2)
 ```
 
-This gives us 9 prototypes with the guarantee that each of the n points is no more than 1 unit from one of the prototypes.
+This gives us `r length(cut$protos)` prototypes with the guarantee that each of the n points is no more than `r h` unit from one of the prototypes.
 
 ```{r dataclusters, echo = FALSE}
 # get the prototype assigned to each point:

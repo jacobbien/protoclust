@@ -19,12 +19,12 @@ devtools::install_github("jacobbien/protoclust")
 
 in R.
 
-Quick example of prototype clustering
--------------------------------------
+Simple example of prototype clustering
+--------------------------------------
 
 Suppose we have some data. ![](README-data-1.png)
 
-We compute an n-by-n matrix of dissimilarities `d`.
+After computing an n-by-n matrix of dissimilarities `d`, we can apply prototype clustering.
 
 ``` r
 # perform minimax linkage clustering:
