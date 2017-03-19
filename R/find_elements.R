@@ -32,5 +32,6 @@ find_elements <- function(hc) {
       }
     }
   }
+  paths[[hc$protos[n-1]]] <- NA # this is the root
   paths
 }
