@@ -21,6 +21,9 @@ innernodepositions <- function(hc) {
 #' Calls \code{\link{plotwithprototypes}}, which allows one to add prototype
 #' labels to the dendrogram.
 #' 
+#' @param x a protoclust object
+#' @param ... additional arguments to be passed to 
+#'        \code{\link{plotwithprototypes}}
 #' @export
 plot.protoclust <- function(x, ...) {
   plotwithprototypes(x, ...)

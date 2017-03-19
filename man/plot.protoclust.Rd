@@ -6,6 +6,12 @@
 \usage{
 \method{plot}{protoclust}(x, ...)
 }
+\arguments{
+\item{x}{a protoclust object}
+
+\item{...}{additional arguments to be passed to 
+\code{\link{plotwithprototypes}}}
+}
 \description{
 Calls \code{\link{plotwithprototypes}}, which allows one to add prototype
 labels to the dendrogram.
