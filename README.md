@@ -22,7 +22,7 @@ in R.
 Simple example of prototype clustering
 --------------------------------------
 
-Suppose we have some data. ![](README-data-1.png)
+Suppose we have some data. ![](README_figs/data-1.png)
 
 After computing an n-by-n matrix of dissimilarities `d`, we can apply prototype clustering.
 
@@ -39,8 +39,8 @@ plot(hc, imerge = cut$imerge, col=2)
 abline(h = h, lty = 2)
 ```
 
-![](README-dendrogram-1.png)
+![](README_figs/dendrogram-1.png)
 
 This gives us 9 prototypes with the guarantee that each of the n points is no more than 1 unit from one of the prototypes.
 
-![](README-dataclusters-1.png)
+![](README_figs/dataclusters-1.png)
