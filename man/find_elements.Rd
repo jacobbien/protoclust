@@ -10,8 +10,10 @@ find_elements(hc)
 \item{hc}{a protoclust object}
 }
 \value{
-a list of length n giving for each element the path from
-root to its highest occurrence. A 0 means go left, a 1 means go right.
+\item{paths}{a list of length n giving, for each element, the path from
+root to its highest occurrence. A 0 means go left, a 1 means go right.}
+\item{int_paths}{a list of length n - 1 giving, for each interior node,
+the path from root to it. A 0 means go left, a 1 means go right.}
 }
 \description{
 A protoclust object has a prototype associated with each interior node.
@@ -21,4 +23,3 @@ the path from the root to the highest occurrence of that element.  The path
 is specified by a series of 0s and 1s, where 0 means "go left" and 1 means
 "go right".
 }
-

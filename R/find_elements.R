@@ -9,8 +9,11 @@
 #' 
 #' @param hc a protoclust object
 #' 
-#' @return a list of length n giving for each element the path from
-#' root to its highest occurrence. A 0 means go left, a 1 means go right.
+#' @return 
+#' \item{paths}{a list of length n giving, for each element, the path from
+#' root to its highest occurrence. A 0 means go left, a 1 means go right.}
+#' \item{int_paths}{a list of length n - 1 giving, for each interior node,
+#' the path from root to it. A 0 means go left, a 1 means go right.}
 #' @export
 find_elements <- function(hc) {
   n <- length(hc$order)
@@ -33,5 +36,5 @@ find_elements <- function(hc) {
     }
   }
   paths[[hc$protos[n-1]]] <- NA # this is the root
-  paths
+  list(paths = paths, int_paths = int_paths)
 }

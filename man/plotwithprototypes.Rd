@@ -77,9 +77,6 @@ plot(hc, hang=-1, imerge=cut2$imerge)
 abline(h=h2, lty=2)
 
 }
-\author{
-Jacob Bien and Rob Tibshirani
-}
 \references{
 Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
 with Prototypes via Minimax Linkage," accepted for publication in \emph{The
@@ -89,5 +86,7 @@ Journal of the American Statistical Association}, DOI:
 \seealso{
 \code{\link{protoclust}}, \code{\link{protocut}}
 }
+\author{
+Jacob Bien and Rob Tibshirani
+}
 \keyword{cluster}
-

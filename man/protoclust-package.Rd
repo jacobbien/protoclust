@@ -56,11 +56,6 @@ for (i in cut$protos) {
   lines(x[i, 1] + h * cos(tt), x[i, 2] + h * sin(tt))
 }
 }
-\author{
-Jacob Bien and Rob Tibshirani
-
-Maintainer: Jacob Bien <jbien@cornell.edu>
-}
 \references{
 Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
 with Prototypes via Minimax Linkage," accepted for publication in \emph{The
@@ -71,5 +66,9 @@ Journal of the American Statistical Association}, DOI:
 \code{\link{protoclust}}, \code{\link{protocut}},
 \code{\link{plotwithprototypes}}
 }
-\keyword{cluster}
+\author{
+Jacob Bien and Rob Tibshirani
 
+Maintainer: Jacob Bien <jbien@cornell.edu>
+}
+\keyword{cluster}

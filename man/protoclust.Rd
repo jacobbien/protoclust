@@ -98,9 +98,6 @@ for (i in cut$protos) {
 }
 
 }
-\author{
-Jacob Bien and Rob Tibshirani
-}
 \references{
 Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
 with Prototypes via Minimax Linkage," accepted for publication in \emph{The
@@ -114,5 +111,7 @@ Algorithms," \emph{The Computer Journal}, \bold{26}, 354--359.
 \code{\link{protocut}}, \code{\link{plotwithprototypes}},
 \code{\link{hclust}}
 }
+\author{
+Jacob Bien and Rob Tibshirani
+}
 \keyword{cluster}
-

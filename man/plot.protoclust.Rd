@@ -16,4 +16,3 @@
 Calls \code{\link{plotwithprototypes}}, which allows one to add prototype
 labels to the dendrogram.
 }
-
