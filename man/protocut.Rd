@@ -85,9 +85,8 @@ for (i in cut$protos) {
 }
 \references{
 Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
-with Prototypes via Minimax Linkage," accepted for publication in \emph{The
-Journal of the American Statistical Association}, DOI:
-10.1198/jasa.2011.tm10183.
+with Prototypes via Minimax Linkage," \emph{The Journal of the American 
+Statistical Association}, 106(495), 1075-1084.
 }
 \seealso{
 \code{\link{protoclust}}, \code{\link{cutree}},

@@ -15,10 +15,9 @@
 #' For more on minimax linkage and how one can use prototypes to help interpret
 #' a dendrogram, see
 #' 
-#' Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering with
-#' Prototypes via Minimax Linkage," accepted for publication in \emph{The
-#' Journal of the American Statistical Association}, DOI:
-#' 10.1198/jasa.2011.tm10183.
+#' @references Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
+#' with Prototypes via Minimax Linkage," \emph{The Journal of the American 
+#' Statistical Association}, 106(495), 1075-1084.
 #' 
 #' This function has been designed to work like \code{hclust} in terms of
 #' inputs and outputs; however, unlike \code{hclust}, it outputs an additional
@@ -45,10 +44,9 @@
 #' @seealso \code{\link{protocut}}, \code{\link{plotwithprototypes}},
 #' \code{\link{hclust}}
 #' @references Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
-#' with Prototypes via Minimax Linkage," accepted for publication in \emph{The
-#' Journal of the American Statistical Association}, DOI:
-#' 10.1198/jasa.2011.tm10183.
-#' 
+#' with Prototypes via Minimax Linkage," \emph{The Journal of the American 
+#' Statistical Association}, 106(495), 1075-1084.
+#'  
 #' Murtagh, F. (1983), "A Survey of Recent Advances in Hierarchical Clustering
 #' Algorithms," \emph{The Computer Journal}, \bold{26}, 354--359.
 #' @keywords cluster

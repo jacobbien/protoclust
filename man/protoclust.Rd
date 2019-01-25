@@ -35,24 +35,6 @@ formed cluster U is that enclosing ball's center.  By construction, the
 prototype for a cluster will always be one of the objects being clustered.
 For more on minimax linkage and how one can use prototypes to help interpret
 a dendrogram, see
-
-Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering with
-Prototypes via Minimax Linkage," accepted for publication in \emph{The
-Journal of the American Statistical Association}, DOI:
-10.1198/jasa.2011.tm10183.
-
-This function has been designed to work like \code{hclust} in terms of
-inputs and outputs; however, unlike \code{hclust}, it outputs an additional
-element, namely a vector of length n - 1 containing the indices of
-prototypes.  It follows \code{hclust}'s convention for making the arbitrary
-choice of whether to put a subtree on the left or right side.
-
-For cutting a minimax linkage hierarchical clustering, use
-\code{\link{protocut}}, which works like \code{\link{cutree}} except that it
-returns the set of prototypes in addition to the cluster assignments.
-
-This function calls a C implementation of the algorithm detailed in Bien and
-Tibshirani (2011) that is based on an algorithm described in Murtagh (1983).
 }
 \examples{
 
@@ -100,10 +82,26 @@ for (i in cut$protos) {
 }
 \references{
 Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
-with Prototypes via Minimax Linkage," accepted for publication in \emph{The
-Journal of the American Statistical Association}, DOI:
-10.1198/jasa.2011.tm10183.
+with Prototypes via Minimax Linkage," \emph{The Journal of the American 
+Statistical Association}, 106(495), 1075-1084.
 
+This function has been designed to work like \code{hclust} in terms of
+inputs and outputs; however, unlike \code{hclust}, it outputs an additional
+element, namely a vector of length n - 1 containing the indices of
+prototypes.  It follows \code{hclust}'s convention for making the arbitrary
+choice of whether to put a subtree on the left or right side.
+
+For cutting a minimax linkage hierarchical clustering, use
+\code{\link{protocut}}, which works like \code{\link{cutree}} except that it
+returns the set of prototypes in addition to the cluster assignments.
+
+This function calls a C implementation of the algorithm detailed in Bien and
+Tibshirani (2011) that is based on an algorithm described in Murtagh (1983).
+
+Bien, J., and Tibshirani, R. (2011), "Hierarchical Clustering
+with Prototypes via Minimax Linkage," \emph{The Journal of the American 
+Statistical Association}, 106(495), 1075-1084.
+ 
 Murtagh, F. (1983), "A Survey of Recent Advances in Hierarchical Clustering
 Algorithms," \emph{The Computer Journal}, \bold{26}, 354--359.
 }
