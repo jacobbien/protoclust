@@ -1,8 +1,8 @@
 Package: protoclust
 Type: Package
 Title: Hierarchical Clustering with Prototypes
-Version: 1.6.3
-Date: 2019-01-24
+Version: 1.6.4
+Date: 2022-03-31
 Author: Jacob Bien and Rob Tibshirani
 Maintainer: Jacob Bien <jbien@usc.edu>
 Description: Performs minimax linkage hierarchical clustering.  Every cluster
