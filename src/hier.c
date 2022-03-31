@@ -227,8 +227,9 @@ void hier(double *d, int *ndim, int *verbose, int *merge, double *height, int *o
   
   for(i = 0; i < n-1; i++) {
     count = 0;
-    if((i+count+1)<(n-1))
-      while(height[i+count+1]==height[i])
+    while((i+count+1)<(n-1) && height[i+count+1]==height[i])
+    //if((i+count+1)<(n-1))
+    //  while(height[i+count+1]==height[i])
 	count++;
     // heights are constant from i to i+count
     if(count > 0) {
