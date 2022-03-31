@@ -22,7 +22,7 @@ Since `protoclust` is on CRAN, it can be easily installed using
 install.packages("protoclust")
 ```
 in R.  Occasionally, this github version of the package will be more up-to-date.  The easiest way to install this version is
-by using the [devtools](https://cran.r-project.org/web/packages/devtools/index.html) R package (if not already installed, open R and type `install.packages("devtools")`). To install `protoclust`, type
+by using the [devtools](https://CRAN.R-project.org/package=devtools) R package (if not already installed, open R and type `install.packages("devtools")`). To install `protoclust`, type
 
 ```{r, eval = FALSE}
 devtools::install_github("jacobbien/protoclust")
