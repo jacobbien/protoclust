@@ -4,8 +4,16 @@
 \alias{plotwithprototypes}
 \title{Plot Dendrogram with Prototype Labels Added}
 \usage{
-plotwithprototypes(hc, imerge = -seq(n), labels = NULL, bgcol = "white",
-  font = 1, col = 1, cex = 1, ...)
+plotwithprototypes(
+  hc,
+  imerge = -seq(n),
+  labels = NULL,
+  bgcol = "white",
+  font = 1,
+  col = 1,
+  cex = 1,
+  ...
+)
 }
 \arguments{
 \item{hc}{an object of class \code{protoclust} (as returned by the function
