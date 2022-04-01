@@ -1,4 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^README_figs
 ^README_figs\/.*\.png$
 ^README\.Rmd$
+^README\.md$

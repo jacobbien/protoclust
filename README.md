@@ -5,8 +5,8 @@
 
 This R package implements hierarchical clustering with minimax linkage
 (a.k.a., prototype clustering). See [Bien, J. and Tibshirani, R. (2011)
-“Hierarchical Clustering with Prototypes via Minimax
-Linkage”](http://faculty.marshall.usc.edu/Jacob-Bien/papers/jasa2011minimax.pdf)
+*Hierarchical Clustering with Prototypes via Minimax
+Linkage*](http://faculty.marshall.usc.edu/Jacob-Bien/papers/jasa2011minimax.pdf)
 for more details.
 
 Since `protoclust` is on CRAN, it can be easily installed using

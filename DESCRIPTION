@@ -12,4 +12,5 @@ Description: Performs minimax linkage hierarchical clustering.  Every cluster
     Statistical Association, 106(495), 1075-1084.
 License: GPL-2
 LazyLoad: yes
+Encoding: UTF-8
 RoxygenNote: 7.1.2
